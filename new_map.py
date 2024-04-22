@@ -23,7 +23,7 @@ for lt, ln, el in zip(lat, lon, ele):
     #this line adds a marker that enables he user to pinpoint the values
     #f.add_child(folium.Marker(location=[lt, ln], popup=el, icon=folium.Icon(color=colour_marker(el))))
     color_it,rad=colour_marker(el)
-    f.add_child(folium.CircleMarker(location=[lt, ln], popup=el, radius=rad, fill_color=color_it, color='grey', fill_opacity=0.7))
+    f.add_child(folium.CircleMarker(location=[lt, ln], popup=el, radius=rad, fill_color=color_it, color='grey', fill_opacity=0.5))
 
 fg = folium.FeatureGroup(name="area under observation")
 
