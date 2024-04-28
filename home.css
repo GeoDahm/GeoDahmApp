@@ -1,0 +1,52 @@
+/* home1.css */
+body {
+    background: url(D:/bg1.png); 
+    background-size: cover; 
+    font-family: Arial, sans-serif;
+}
+
+header {
+    color: white;
+    text-align: right;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Set color to white */
+    font-family: "Arial", sans-serif; 
+    
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    align-items: center; /* Center content vertically */
+    color: white; /* Set text color to white */
+    padding: 20px;
+}
+
+.caption {
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}

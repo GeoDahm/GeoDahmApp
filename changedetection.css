@@ -1,0 +1,62 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url('D:/nasa.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="file"] {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    display: block;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #45a049;
+}
