@@ -18,6 +18,13 @@ def colour_marker(elevation):
 
 map = folium.Map(location=[38.58, -99.08], zoom_start=6, tiles='OpenStreetMap')
 
+folium.TileLayer(
+    tiles='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+    attr='OpenStreetMap',
+    name='OpenStreetMap Satellite',
+    overlay=True,
+).add_to(map)
+
 f = folium.FeatureGroup(name="danger zones")
 for lt, ln, el in zip(lat, lon, ele):
     #this line adds a marker that enables he user to pinpoint the values
