@@ -42,4 +42,4 @@ if x['properties']['POP2005'] <10000000 else 'orange' if 10000000 <= x['properti
 map.add_child(f)
 map.add_child(fg)
 map.add_child(folium.LayerControl())
-map.save("Map3.html")
+map.save("Map4.html")
