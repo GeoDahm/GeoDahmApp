@@ -1,0 +1,88 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-image: url("../images/aboutbg.png");
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Background color for the body */
+}
+
+.about-section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: justify;
+}
+
+.about-section h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e0dddd;
+}
+
+.about-section .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #e0dddd; /* Color for the description text */
+}
+
+.contact-form-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* Background color for the contact form container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for the contact form container */
+}
+
+.contact-form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: calc(100% - 4px);
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50; /* Background color for the button */
+    color: white; /* Text color for the button */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049; /* Background color on hover */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333; /* Background color for the footer */
+    color: #fff; /* Text color for the footer */
+}

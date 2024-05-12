@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="{% static 'css/about.css' %}"> <!-- External CSS file -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"> <!-- Google Fonts -->
+</head>
+<body>
+    <div class="about-section">
+        <h1>ABOUT US</h1>
+        <p class="description">The geospatial data analysis model aims to harness spatial information to derive meaningful insights, patterns, and trends. The process begins with the collection of diverse geo-spatial data sources, including satellite imagery, river flow analysis, weather data, followed by rigorous data cleaning and preprocessing. Integration of these datasets creates a comprehensive geo-spatial dataset, which is trained using the Segment Anything Model (SAM). Feature extraction is then employed to identify crucial features, enhance existing ones, and prepare the data for change detection and to identify risk zones. Visualization techniques, such as maps and heat maps in the user interface, aid in effectively communicating the results. The application of this model spans various domains like urban planning, disaster response, and environmental monitoring. Ensuring scalability, efficiency, and addressing ethical considerations are integral aspects of the project. Ultimately, the project aims to provide valuable insights from geographic data for informed decision-making and strategic planning.</p>
+    </div>
+
+    <div class="contact-form-container">
+        <h2>Contact Us</h2>
+        <form action="#" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone No.:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="query">Query:</label>
+                <textarea id="query" name="query" rows="4" required></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>Email: geodahm10@gmail.com</p>
+    </footer>
+</body>
+</html>

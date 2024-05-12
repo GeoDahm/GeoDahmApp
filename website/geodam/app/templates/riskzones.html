@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RISK ZONES</title>
+    <link rel="stylesheet" href="{% static 'css/riskzones.css' %}">
+</head>
+
+<body>
+    <header>
+        <h1>RISK ZONES</h1>
+    </header>
+
+    <main>
+        <section class="container">
+            <p>The risk zone map serves as a crucial communication tool, directly empowering the public with vital knowledge about flood risks in their region. By visually highlighting these zones, the map allows residents to make informed decisions regarding where to build homes. High-risk areas, designated in red, demand the utmost caution and should be avoided for permanent structures. Orange zones represent areas with moderate flood risk, requiring careful planning and adherence to building codes. Finally, yellow zones indicate low-risk areas, but even these locations should not be considered entirely immune to potential flooding during extreme weather events.</p>
+            <div class="btn-container">
+                <a href="{% url 'app:map' %}" class="btn">View Map</a>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/imageupload.css' %}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+    <title>Change Detection</title>
+</head>
+<body>
+    <div class="heading-description">
+        <h1>CHANGE DETECTION</h1>
+        <p class="description">Change detection focuses on identifying and measuring changes in the geo-spatial data over time. This will be useful for applications such as monitoring deforestation, tracking land use changes, or assessing the impact of natural disasters. After change detection, the generated mask for the latest image is overlaid on the older image. By analyzing the areas where the mask didn’t perfectly align with the older image, we can pinpoint the exact locations of newly constructed objects that appeared between the two capture times.</p>
+    </div>
+
+    <div class="content-container">
+        <div class="container">
+            <h2>Upload Two Images:</h2>
+            <form action="upload/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="image1">Old Image:</label>
+                    <input type="file" id="image1" name="image1" accept="image/*">
+                </div>
+                <div class="form-group">
+                    <label for="image2">New Image:</label>
+                    <input type="file" id="image2" name="image2" accept="image/*">
+                </div>
+                <div class="button-container">
+                    <button type="submit">Upload</button>
+                    <a href="https://colab.research.google.com/drive/1Vxa2U2O6zUNvUp_qgNg8y_KVGOetqZRG#scrollTo=vQj221a5tHEL" class="test-data-btn">Test Data</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

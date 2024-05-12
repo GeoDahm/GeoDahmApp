@@ -1,0 +1,46 @@
+<!-- index.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/home1.css' %}">
+
+    <title>Homepage</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="{% url 'app:home' %}">HOME</a></li>
+                    <li><a href="{% url 'app:upload' %}">CHANGE DETECTION</a></li>
+                    <li><a href="{% url 'app:riskzones' %}">RISK ZONES</a></li>
+                    <li><a href="{% url 'app:riverflow' %}">RIVER FLOW</a></li>
+                    <li><a href="https://www.accuweather.com/en/in/national/satellite">WEATHER DATA</a></li>
+                    <li><a href="{% url 'app:about' %}">ABOUT US</a></li>
+                </ul>
+                <ul>
+                    <li></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <div class="caption">
+                <h1></h1>
+                <p></p>
+            </div>
+            
+        </div>
+    </main>
+</body>
+
+</html>

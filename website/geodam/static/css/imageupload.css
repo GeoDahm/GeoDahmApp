@@ -1,0 +1,95 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("../images/nasa.jpg"); /* Specify your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+.heading-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: justify;
+  margin-top: 50px;
+}
+
+.heading-description h1 {
+  color: #ffffff;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.heading-description .description {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+  max-width: 1100px;
+  margin-bottom: 30px;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.container {
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  max-width: 600px;
+}
+
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ffffff;
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="file"] {
+  display: block;
+  width: calc(100% - 4px);
+  padding: 2px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+button,
+.test-data-btn {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover,
+.test-data-btn:hover {
+  background-color: #45a049;
+}
